@@ -1,0 +1,1942 @@
+
+**************************************************************
+ Geant4 version Name: geant4-11-03 [MT]   (6-December-2024)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+G4PhysListFactory::GetReferencePhysList <Shielding>  EMoption= 0
+<<< Geant4 Physics List simulation engine: Shielding
+<<< (Note that Shielding and Shielding_HP are equivalent!)
+
+
+ hInelastic Shielding : threshold between BERT and FTFP is over the interval 
+ for pions :   3 to 6 GeV
+ for kaons :   3 to 6 GeV
+ for proton :  3 to 6 GeV
+ for neutron : 3 to 6 GeV
+
+@@@ G4ParticleHPInelasticData instantiated for particle neutron data directory variable is G4NEUTRONHPDATA pointing to /home/gabriels3t/Documentos/Programas/Geant4/share/Geant4/data/G4NDL4.7.1
+NeutronHP: /Capture file for Z = 18, A = 36 is not found and NeutronHP will use /home/gabriels3t/Documentos/Programas/Geant4/share/Geant4/data/G4NDL4.7.1/Capture/CrossSection/18_37_Argon
+NeutronHP: /Elastic file for Z = 18, A = 36 is not found and NeutronHP will use /home/gabriels3t/Documentos/Programas/Geant4/share/Geant4/data/G4NDL4.7.1/Elastic/CrossSection/18_37_Argon
+NeutronHP: /Inelastic file for Z = 18, A = 36 is not found and NeutronHP will use /home/gabriels3t/Documentos/Programas/Geant4/share/Geant4/data/G4NDL4.7.1/Inelastic/CrossSection/18_37_Argon
+NeutronHP: /Capture file for Z = 18, A = 38 is not found and NeutronHP will use /home/gabriels3t/Documentos/Programas/Geant4/share/Geant4/data/G4NDL4.7.1/Capture/CrossSection/18_39_Argon
+NeutronHP: /Elastic file for Z = 18, A = 38 is not found and NeutronHP will use /home/gabriels3t/Documentos/Programas/Geant4/share/Geant4/data/G4NDL4.7.1/Elastic/CrossSection/18_39_Argon
+NeutronHP: /Inelastic file for Z = 18, A = 38 is not found and NeutronHP will use /home/gabriels3t/Documentos/Programas/Geant4/share/Geant4/data/G4NDL4.7.1/Inelastic/CrossSection/18_39_Argon
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Registered graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRepFile (HepRepFile)
+  RayTracer (RayTracer)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+  TOOLSSG_OFFSCREEN (TSG_OFFSCREEN, TSG_FILE, TSG)
+  OpenGLImmediateQt (OGLIQt, OGLI)
+  OpenGLStoredQt (OGLSQt, OGL, OGLS)
+  OpenGLImmediateX (OGLIX, OGLIQt_FALLBACK)
+  OpenGLStoredX (OGLSX, OGLSQt_FALLBACK)
+You may choose a graphics system (driver) with a parameter of
+the command "/vis/open" or "/vis/sceneHandler/create",
+or you may omit the driver parameter and choose at run time:
+- by argument in the construction of G4VisExecutive;
+- by environment variable "G4VIS_DEFAULT_DRIVER";
+- by entry in "~/.g4session";
+- by build flags.
+- Note: This feature is not allowed in batch mode.
+For further information see "examples/basic/B1/exampleB1.cc"
+and "vis.mac".
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByAttribute
+  drawByCharge
+  drawByOriginVolume
+  drawByParticleID
+  drawByEncounteredVolume
+
+Registered models:
+  None
+
+Registered filter factories:
+  attributeFilter
+  chargeFilter
+  originVolumeFilter
+  particleFilter
+  encounteredVolumeFilter
+
+Registered filters:
+  None
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+"/vis/list" to see available colours.
+Available UI session types: [ Qt, Xm, tcsh, csh ]
+Default graphics system is: OGL (based on G4VisManager initialisation).
+Default window size hint is: 600x600-0+0 (based on G4VisManager initialisation).
+Note: Parameters specified on the command line will override these defaults.
+      Use "vis/open" without parameters to get these defaults.
+Default graphics system is: OGL (based on G4VisManager initialisation).
+Default window size hint is: 600x600-0+0 (based on G4VisManager initialisation).
+Note: Parameters specified on the command line will override these defaults.
+      Use "vis/open" without parameters to get these defaults.
+Attributes available for modeling and filtering with
+  "/vis/modeling/trajectories/create/drawByAttribute" and
+  "/vis/filtering/trajectories/create/attributeFilter" commands:
+G4TrajectoriesModel:
+  Event ID (EventID): G4int
+  Run ID (RunID): G4int
+G4SmoothTrajectory:
+  Charge (Ch): unit: e+ (G4double)
+  Track ID (ID): G4int
+  Initial kinetic energy (IKE): G4BestUnit (G4double)
+  Initial momentum magnitude (IMag): G4BestUnit (G4double)
+  Initial momentum (IMom): G4BestUnit (G4ThreeVector)
+  No. of points (NTP): G4int
+  PDG Encoding (PDG): G4int
+  Parent ID (PID): G4int
+  Particle Name (PN): G4String
+G4SmoothTrajectoryPoint:
+  Auxiliary Point Position (Aux): G4BestUnit (G4ThreeVector)
+  Step Position (Pos): G4BestUnit (G4ThreeVector)
+WARNING: Trajectory storing has been requested.  This action may be
+  reversed with "/tracking/storeTrajectory 0".
+=======================================================================
+======                 Electromagnetic Physics Parameters      ========
+=======================================================================
+LPM effect enabled                                 1
+Enable creation and use of sampling tables         0
+Apply cuts on all EM processes                     0
+Use combined TransportationWithMsc                 Disabled
+Use general process                                1
+Enable linear polarisation for gamma               0
+Enable photoeffect sampling below K-shell          1
+Enable sampling of quantum entanglement            0
+X-section factor for integral approach             0.8
+Min kinetic energy for tables                      100 eV 
+Max kinetic energy for tables                      100 TeV
+Number of bins per decade of a table               7
+Verbose level                                      1
+Verbose level for worker thread                    0
+Bremsstrahlung energy threshold above which 
+  primary e+- is added to the list of secondary    100 TeV
+Bremsstrahlung energy threshold above which primary
+  muon/hadron is added to the list of secondary    100 TeV
+Positron annihilation at rest model                SimplePositronium
+Enable 3 gamma annihilation on fly                 0
+Lowest triplet kinetic energy                      1 MeV
+Enable sampling of gamma linear polarisation       0
+5D gamma conversion model type                     0
+5D gamma conversion model on isolated ion          0
+Use Ricardo-Gerardo pair production model          0
+Livermore data directory                           epics_2017
+=======================================================================
+======                 Ionisation Parameters                   ========
+=======================================================================
+Step function for e+-                              (0.2, 1 mm)
+Step function for muons/hadrons                    (0.2, 0.1 mm)
+Step function for light ions                       (0.2, 0.1 mm)
+Step function for general ions                     (0.2, 0.1 mm)
+Lowest e+e- kinetic energy                         1 keV
+Lowest muon/hadron kinetic energy                  1 keV
+Use ICRU90 data                                    0
+Fluctuations of dE/dx are enabled                  1
+Type of fluctuation model for leptons and hadrons  Urban
+Use built-in Birks satuaration                     0
+Build CSDA range enabled                           0
+Use cut as a final range enabled                   0
+Enable angular generator interface                 0
+Max kinetic energy for CSDA tables                 1 GeV
+Max kinetic energy for NIEL computation            0 eV 
+Linear loss limit                                  0.01
+Read data from file for e+e- pair production by mu 0
+=======================================================================
+======                 Multiple Scattering Parameters          ========
+=======================================================================
+Type of msc step limit algorithm for e+-           1
+Type of msc step limit algorithm for muons/hadrons 0
+Msc lateral displacement for e+- enabled           1
+Msc lateral displacement for muons and hadrons     0
+Urban msc model lateral displacement alg96         1
+Range factor for msc step limit for e+-            0.04
+Range factor for msc step limit for muons/hadrons  0.2
+Geometry factor for msc step limitation of e+-     2.5
+Safety factor for msc step limit for e+-           0.6
+Skin parameter for msc step limitation of e+-      1
+Lambda limit for msc step limit for e+-            1 mm
+Use Mott correction for e- scattering              0
+Factor used for dynamic computation of angular 
+  limit between single and multiple scattering     1
+Fixed angular limit between single 
+  and multiple scattering                          3.1416 rad
+Upper energy limit for e+- multiple scattering     100 MeV
+Type of electron single scattering model           0
+Type of nuclear form-factor                        1
+Screening factor                                   1
+=======================================================================
+======                 Atomic Deexcitation Parameters          ========
+=======================================================================
+Fluorescence enabled                               1
+Directory in G4LEDATA for fluorescence data files  fluor
+Auger electron cascade enabled                     1
+PIXE atomic de-excitation enabled                  0
+De-excitation module ignores cuts                  1
+Type of PIXE cross section for hadrons             Empirical
+Type of PIXE cross section for e+-                 Livermore
+=======================================================================
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 1 region:
+          DefaultRegionForTheWorld  1  1  0
+### ===  Auger flag: 1
+### ===  Ignore cuts flag:   1
+
+phot:  for gamma SubType=12 BuildTable=0
+      LambdaPrime table from 200 keV to 100 TeV in 61 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermorePhElectric : Emin=    0 eV  Emax=  100 TeV  SauterGavrila Fluo
+
+compt:  for gamma SubType=13 BuildTable=1
+      Lambda table from 100 eV  to 1 MeV, 7 bins/decade, spline: 1
+      LambdaPrime table from 1 MeV to 100 TeV in 56 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina : Emin=    0 eV  Emax=  100 TeV
+
+conv:  for gamma SubType=14 BuildTable=1
+      Lambda table from 1.022 MeV to 100 TeV, 18 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+     BetheHeitlerLPM : Emin=    0 eV  Emax=  100 TeV  ModifiedTsai
+
+Rayl:  for gamma SubType=11 BuildTable=1
+      Lambda table from 100 eV  to 150 keV, 7 bins/decade, spline: 0
+      LambdaPrime table from 150 keV to 100 TeV in 62 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   LivermoreRayleigh : Emin=    0 eV  Emax=  100 TeV  CullenGenerator
+
+msc:  for e-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 MeV Nbins=42 100 eV  - 100 MeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+        WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=42 100 MeV - 100 TeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+
+eIoni:  for e-  XStype:3  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 1 mm), integ: 3, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha : Emin=    0 eV  Emax=  100 TeV
+
+eBrem:  for e-  XStype:4  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB : Emin=    0 eV  Emax=    1 GeV  ModifiedTsai
+            eBremLPM : Emin=    1 GeV Emax=  100 TeV  ModifiedTsai
+
+CoulombScat:  for e- XStype:1 SubType=1 BuildTable=1
+      Lambda table from 100 MeV to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180, pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=  100 MeV Emax=  100 TeV
+
+msc:  for e+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 MeV Nbins=42 100 eV  - 100 MeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+        WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=42 100 MeV - 100 TeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+
+eIoni:  for e+  XStype:3  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 1 mm), integ: 3, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha : Emin=    0 eV  Emax=  100 TeV
+
+eBrem:  for e+  XStype:4  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB : Emin=    0 eV  Emax=    1 GeV  ModifiedTsai
+            eBremLPM : Emin=    1 GeV Emax=  100 TeV  ModifiedTsai
+
+annihil:  for e+ XStype:2 SubType=5 AtRestModel:Simple BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for e+ XStype:1 SubType=1 BuildTable=1
+      Lambda table from 100 MeV to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180, pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=  100 MeV Emax=  100 TeV
+
+msc:  for proton  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for proton  XStype:3  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+hBrems:  for proton  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for proton  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 17x1001; from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for proton XStype:1 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180, pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for GenericIon  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+ionIoni:  for GenericIon  XStype:3  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+======================================================================
+======          Radioactive Decay Physics Parameters           =======
+======================================================================
+min MeanLife (from G4NuclideTable)                1 ns 
+Max life time (from G4DeexPrecoParameters)        1000 ps 
+Internal e- conversion flag                       1
+Stored internal conversion coefficients           1
+Enabled atomic relaxation mode                    1
+Enable correlated gamma emission                  0
+Max 2J for sampling of angular correlations       10
+Atomic de-excitation enabled                      1
+Auger electron emission enabled                   1
+Check EM cuts disabled for atomic de-excitation   1
+Use Bearden atomic level energies                 0
+Use ANSTO fluorescence model                      0
+Threshold for very long decay time at rest        1 y  
+======================================================================
+
+msc:  for alpha  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+ionIoni:  for alpha  XStype:3  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon : Emin=    0 eV  Emax=7.9452 MeV
+          BetheBloch : Emin=7.9452 MeV Emax=  100 TeV
+
+msc:  for anti_proton  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for anti_proton  XStype:3  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+hBrems:  for anti_proton  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for anti_proton  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 17x1001; from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for anti_proton XStype:1 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180, pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for kaon+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for kaon+  XStype:3  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=1.05231 MeV
+          BetheBloch : Emin=1.05231 MeV Emax=  100 TeV
+
+hBrems:  for kaon+  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for kaon+  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 18x1001; from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for kaon+ XStype:1 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180, pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for kaon-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for kaon-  XStype:3  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=1.05231 MeV
+          BetheBloch : Emin=1.05231 MeV Emax=  100 TeV
+
+hBrems:  for kaon-  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for kaon-  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 18x1001; from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for kaon- XStype:1 SubType=1 BuildTable=1
+      Used Lambda table of kaon+
+      ThetaMin(p) < Theta(degree) < 180, pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for mu+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+muIoni:  for mu+  XStype:3  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=  200 keV
+        MuBetheBloch : Emin=  200 keV Emax=  100 TeV
+
+muBrems:  for mu+  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+muPairProd:  for mu+  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 21x1001; from 0.85 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for mu+ XStype:1 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180, pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for mu-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+muIoni:  for mu-  XStype:3  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=  200 keV
+        MuBetheBloch : Emin=  200 keV Emax=  100 TeV
+
+muBrems:  for mu-  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+muPairProd:  for mu-  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 21x1001; from 0.85 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for mu- XStype:1 SubType=1 BuildTable=1
+      Used Lambda table of mu+
+      ThetaMin(p) < Theta(degree) < 180, pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+NeutronHP: /Capture file for Z = 18, A = 36 is not found and NeutronHP will use /home/gabriels3t/Documentos/Programas/Geant4/share/Geant4/data/G4NDL4.7.1/Capture/CrossSection/18_37_Argon
+NeutronHP: /Elastic file for Z = 18, A = 36 is not found and NeutronHP will use /home/gabriels3t/Documentos/Programas/Geant4/share/Geant4/data/G4NDL4.7.1/Elastic/CrossSection/18_37_Argon
+NeutronHP: /Inelastic file for Z = 18, A = 36 is not found and NeutronHP will use /home/gabriels3t/Documentos/Programas/Geant4/share/Geant4/data/G4NDL4.7.1/Inelastic/CrossSection/18_37_Argon
+NeutronHP: /Capture file for Z = 18, A = 38 is not found and NeutronHP will use /home/gabriels3t/Documentos/Programas/Geant4/share/Geant4/data/G4NDL4.7.1/Capture/CrossSection/18_39_Argon
+NeutronHP: /Elastic file for Z = 18, A = 38 is not found and NeutronHP will use /home/gabriels3t/Documentos/Programas/Geant4/share/Geant4/data/G4NDL4.7.1/Elastic/CrossSection/18_39_Argon
+NeutronHP: /Inelastic file for Z = 18, A = 38 is not found and NeutronHP will use /home/gabriels3t/Documentos/Programas/Geant4/share/Geant4/data/G4NDL4.7.1/Inelastic/CrossSection/18_39_Argon
+NeutronHP: /Elastic file for Z = 18, A = 36 is not found and NeutronHP will use /home/gabriels3t/Documentos/Programas/Geant4/share/Geant4/data/G4NDL4.7.1/Elastic/CrossSection/18_37_Argon
+NeutronHP: /Elastic file for Z = 18, A = 38 is not found and NeutronHP will use /home/gabriels3t/Documentos/Programas/Geant4/share/Geant4/data/G4NDL4.7.1/Elastic/CrossSection/18_39_Argon
+
+=======================================================
+======       ParticleHP Physics Parameters     ========
+=======================================================
+ Use only photo-evaporation      0
+ Skip missing isotopes           0
+ Neglect Doppler                 0
+ Do not adjust final state       0
+ Produce fission fragments       1
+ Use WendtFissionModel           0
+ Use NRESP71Model                0
+ Use DBRC                        0
+ PHP use Poisson                 0
+ PHP check                       1
+ CHECK HP NAMES                  0
+ Enable DEBUG                    0
+ Use probability tables from     
+=======================================================
+
+@@@ G4ParticleHPInelastic instantiated for particle neutron/n    data directory is /home/gabriels3t/Documentos/Programas/Geant4/share/Geant4/data/G4NDL4.7.1/Inelastic
+NeutronHP: /Capture file for Z = 18, A = 36 is not found and NeutronHP will use /home/gabriels3t/Documentos/Programas/Geant4/share/Geant4/data/G4NDL4.7.1/Capture/CrossSection/18_37_Argon
+NeutronHP: /Capture file for Z = 18, A = 38 is not found and NeutronHP will use /home/gabriels3t/Documentos/Programas/Geant4/share/Geant4/data/G4NDL4.7.1/Capture/CrossSection/18_39_Argon
+
+msc:  for pi+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for pi+  XStype:3  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=297.505 keV
+          BetheBloch : Emin=297.505 keV Emax=  100 TeV
+
+hBrems:  for pi+  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for pi+  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 20x1001; from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for pi+ XStype:1 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180, pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for pi-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for pi-  XStype:3  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=297.505 keV
+          BetheBloch : Emin=297.505 keV Emax=  100 TeV
+
+hBrems:  for pi-  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for pi-  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 20x1001; from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
+      Used Lambda table of pi+
+      ThetaMin(p) < Theta(degree) < 180, pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+====================================================================
+                  HADRONIC PROCESSES SUMMARY (verbose level 1)
+-----------------------------------------------------------------------
+                           Hadronic Processes for B-
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+  Process: B-Inelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+-----------------------------------------------------------------------
+                           Hadronic Processes for D-
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+  Process: D-Inelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+-----------------------------------------------------------------------
+                           Hadronic Processes for GenericIon
+  Process: ionElastic
+        Model:          NNDiffuseElastic: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+  Process: ionInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 110 MeV/n
+        Model:                  QMDModel: 100 MeV/n ---> 6 GeV/n
+        Model:                      FTFP: 5.99 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+  Process: RadioactiveDecay
+-----------------------------------------------------------------------
+                           Hadronic Processes for He3
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+  Process: He3Inelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 110 MeV/n
+        Model:                  QMDModel: 100 MeV/n ---> 6 GeV/n
+        Model:                      FTFP: 5.99 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+-----------------------------------------------------------------------
+                           Hadronic Processes for alpha
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+  Process: alphaInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 110 MeV/n
+        Model:                  QMDModel: 100 MeV/n ---> 6 GeV/n
+        Model:                      FTFP: 5.99 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+-----------------------------------------------------------------------
+                           Hadronic Processes for anti_He3
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+  Process: anti_He3Inelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+  Process: hFritiofCaptureAtRest
+-----------------------------------------------------------------------
+                           Hadronic Processes for anti_alpha
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+  Process: anti_alphaInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+  Process: hFritiofCaptureAtRest
+-----------------------------------------------------------------------
+                           Hadronic Processes for anti_deuteron
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+  Process: anti_deuteronInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+  Process: hFritiofCaptureAtRest
+-------------------------------------------------------------------------
+                           Hadronic Processes for anti_hypertriton
+  Process: hFritiofCaptureAtRest
+-----------------------------------------------------------------------
+                           Hadronic Processes for anti_lambda
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+  Process: anti_lambdaInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+  Process: hFritiofCaptureAtRest
+-----------------------------------------------------------------------
+                           Hadronic Processes for anti_neutron
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+  Process: anti_neutronInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+  Process: hFritiofCaptureAtRest
+-----------------------------------------------------------------------
+                           Hadronic Processes for anti_proton
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+  Process: anti_protonInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+  Process: hFritiofCaptureAtRest
+-----------------------------------------------------------------------
+                           Hadronic Processes for anti_triton
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+  Process: anti_tritonInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+  Process: hFritiofCaptureAtRest
+-----------------------------------------------------------------------
+                           Hadronic Processes for deuteron
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+  Process: dInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 110 MeV/n
+        Model:                  QMDModel: 100 MeV/n ---> 6 GeV/n
+        Model:                      FTFP: 5.99 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+-----------------------------------------------------------------------
+                           Hadronic Processes for e+
+  Process: positronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+-----------------------------------------------------------------------
+                           Hadronic Processes for e-
+  Process: electronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+-----------------------------------------------------------------------
+                           Hadronic Processes for gamma
+  Process: photonNuclear
+        Model:               GammaNPreco: 0 eV  ---> 200 MeV
+        Model:            BertiniCascade: 199 MeV ---> 6 GeV
+        Model:           TheoFSGenerator: 3 GeV ---> 100 TeV
+     Cr_sctns:            GammaNuclearXS: 0 eV  ---> 100 TeV
+-----------------------------------------------------------------------
+                           Hadronic Processes for kaon+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+  Process: kaon+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+-----------------------------------------------------------------------
+                           Hadronic Processes for kaon-
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+  Process: kaon-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+  Process: hBertiniCaptureAtRest
+-----------------------------------------------------------------------
+                           Hadronic Processes for lambda
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+  Process: lambdaInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+-----------------------------------------------------------------------
+                           Hadronic Processes for mu+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+-----------------------------------------------------------------------
+                           Hadronic Processes for mu-
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+  Process: muMinusCaptureAtRest
+-----------------------------------------------------------------------
+                           Hadronic Processes for neutron
+  Process: hadElastic
+        Model:             hElasticCHIPS: 19.5 MeV ---> 100 TeV
+        Model:          NeutronHPElastic: 0 eV  ---> 20 MeV
+     Cr_sctns:        NeutronHPElasticXS: 0 eV  ---> 20 MeV
+     Cr_sctns:        G4NeutronElasticXS: 0 eV  ---> 100 TeV
+  Process: neutronInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 19.9 MeV ---> 6 GeV
+        Model:        NeutronHPInelastic: 0 eV  ---> 20 MeV
+     Cr_sctns:      NeutronHPInelasticXS: 0 eV  ---> 20 MeV
+     Cr_sctns: JENDLHEInelasticCrossSection: 0 eV  ---> 100 TeV
+     Cr_sctns:      G4NeutronInelasticXS: 0 eV  ---> 100 TeV
+  Process: nCapture
+        Model:          NeutronHPCapture: 0 eV  ---> 20 MeV
+        Model:               nRadCapture: 19.9 MeV ---> 100 TeV
+     Cr_sctns:        NeutronHPCaptureXS: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronCaptureXS: 0 eV  ---> 100 TeV
+  Process: nFission
+        Model:          NeutronHPFission: 0 eV  ---> 20 MeV
+        Model:                G4LFission: 19.9 MeV ---> 100 TeV
+     Cr_sctns:        NeutronHPFissionXS: 0 eV  ---> 20 MeV
+     Cr_sctns:                    ZeroXS: 0 eV  ---> 100 TeV
+-----------------------------------------------------------------------
+                           Hadronic Processes for pi+
+  Process: hadElastic
+        Model:           hElasticGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+  Process: pi+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+-----------------------------------------------------------------------
+                           Hadronic Processes for pi-
+  Process: hadElastic
+        Model:           hElasticGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+  Process: pi-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+  Process: hBertiniCaptureAtRest
+-----------------------------------------------------------------------
+                           Hadronic Processes for proton
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+  Process: protonInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+-----------------------------------------------------------------------
+                           Hadronic Processes for sigma-
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+  Process: sigma-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+  Process: hBertiniCaptureAtRest
+-----------------------------------------------------------------------
+                           Hadronic Processes for triton
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+  Process: tInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 110 MeV/n
+        Model:                  QMDModel: 100 MeV/n ---> 6 GeV/n
+        Model:                      FTFP: 5.99 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+  Process: RadioactiveDecay
+=======================================================================
+======       Geant4 Native Pre-compound Model Parameters       ========
+=======================================================================
+Type of pre-compound inverse x-section              1
+Pre-compound model active                           1
+Pre-compound excitation low energy                  100 keV
+Pre-compound excitation high energy                 30 MeV
+Angular generator for pre-compound model            1
+Use NeverGoBack option for pre-compound model       0
+Use SoftCutOff option for pre-compound model        0
+Use CEM transitions for pre-compound model          1
+Use GNASH transitions for pre-compound model        0
+Use HETC submodel for pre-compound model            0
+=======================================================================
+======       Nuclear De-excitation Module Parameters           ========
+=======================================================================
+Type of de-excitation inverse x-section             3
+Type of de-excitation factory                       Evaporation+GEM
+Number of de-excitation channels                    68
+Min excitation energy                               10 eV 
+Min energy per nucleon for multifragmentation       200 GeV
+Limit excitation energy for Fermi BreakUp           20 MeV
+Level density (1/MeV)                               0.075
+Use simple level density model                      1
+Use discrete excitation energy of the residual      0
+Time limit for long lived isomeres                  1000 ps 
+Isomer production flag                              1
+Internal e- conversion flag                         1
+Store e- internal conversion data                   1
+Correlated gamma emission flag                      0
+Max 2J for sampling of angular correlations         10
+=======================================================================
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 0 fm 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 0 eV 
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_GLASS_PLATE
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 0 fm 
+ Energy thresholds :  gamma  5.1772 keV    e-  440.079 keV    e+  425.349 keV proton 0 eV 
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : Yes
+ Material : Ethanol
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 0 fm 
+ Energy thresholds :  gamma  2.26958 keV    e-  293.77 keV    e+  286.541 keV proton 0 eV 
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 0 starts.
+=====================================
+  G4EventManager::ProcessOneEvent()  
+=====================================
+G4PrimaryTransformer::PrimaryVertex (-175(mm),0(mm),0(mm),0(nsec))
+1 primary tracks are passed to the stack.
+!!!!!!! Now start processing an event !!!!!!!
+
+*********************************************************************************************************
+* G4Track Information:   Particle = mu+,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     -175        0        0       150        0        0         0      Quarto initStep
+    1     -150        0        0       150  0.00297       25        25 Aquario-Fisico Transportation
+    2     -145 -0.00159 -0.000978       148     2.49        5        30 Aquario-Fisico-Etanol Transportation
+    3    -88.4   -0.545    0.848       136     11.5     56.6      86.6 Aquario-Fisico-Etanol muIoni
+    4    -49.1    -2.48    -0.55       127     8.26     39.4       126 Aquario-Fisico-Etanol muIoni
+    5    -20.1     -4.3    -1.91       120     6.06     29.1       155 Aquario-Fisico-Etanol muIoni
+    6   -0.629    -5.58    -2.81       116     4.32     19.5       175 Aquario-Fisico-Etanol muIoni
+    7      9.6    -6.31    -3.25       113     2.37     10.3       185 Aquario-Fisico-Etanol muIoni
+    8     27.6    -7.32    -3.99       109     3.67       18       203 Aquario-Fisico-Etanol muIoni
+    9     51.2    -8.59    -4.81       103     5.29     23.6       227 Aquario-Fisico-Etanol muIoni
+   10     57.8    -8.88    -5.08       101     1.48     6.61       233 Aquario-Fisico-Etanol muIoni
+   11      109    -11.5    -6.82      87.8     12.6     51.4       285 Aquario-Fisico-Etanol muIoni
+   12      114    -11.7    -6.75      84.4     1.44     5.39       290 Aquario-Fisico-Etanol muIoni
+   13      115    -11.7    -6.74      83.6    0.369    0.725       291 Aquario-Fisico-Etanol muIoni
+   14      145    -12.9    -6.16      76.2     7.38     29.9       321 Aquario-Fisico Transportation
+   15      150    -13.2    -6.07      74.1      2.1     5.01       326      Quarto Transportation
+   16      337    -25.9    -1.96        74   0.0323      188       513      Quarto muIoni
+   17      355    -27.1    -1.55        74  0.00225     17.9       531      Quarto muIoni
+   18      397      -30   -0.601        74   0.0119     41.8       573      Quarto muIoni
+   19      439    -32.9    0.324        74  0.00716     41.7       615      Quarto muIoni
+   20      485    -36.3     1.28        74  0.00842     46.8       662      Quarto muIoni
+   21      533    -39.8     2.34        74  0.00846     47.9       710      Quarto muIoni
+   22      609    -45.2     3.95      73.9   0.0146     76.1       786      Quarto muIoni
+   23      791    -58.5     7.91      73.9   0.0281      183       968      Quarto muIoni
+   24      820    -60.6     8.56      73.9  0.00481     29.2       997      Quarto muIoni
+   25      876    -64.6     9.82      73.9  0.00641     55.8  1.05e+03      Quarto muIoni
+   26    1e+03    -73.7     12.7      73.8   0.0195      125  1.18e+03  OutOfWorld Transportation
+Track (trackID 1, parentID 0) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 22,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      876    -64.6     9.82   0.00156        0        0         0      Quarto initStep
+    1      876    -64.6     9.79         0  0.00156     0.11      0.11      Quarto eIoni
+Track (trackID 22, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 21,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      820    -60.6     8.56   0.00101        0        0         0      Quarto initStep
+    1      820    -60.6     8.54         0  0.00101   0.0577    0.0577      Quarto eIoni
+Track (trackID 21, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 20,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      791    -58.5     7.91   0.00105        0        0         0      Quarto initStep
+    1      791    -58.5      7.9         0  0.00105   0.0611    0.0611      Quarto eIoni
+Track (trackID 20, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 19,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      609    -45.2     3.95     0.039        0        0         0      Quarto initStep
+    1      611    -38.8     4.14    0.0349  0.00405     8.03      8.03      Quarto eIoni
+    2      610    -37.9     4.13    0.0218 0.000895     1.11      9.13      Quarto eIoni
+    3      610      -35     4.62    0.0181  0.00371     3.76      12.9      Quarto eIoni
+    4      611    -35.1     2.46    0.0131  0.00495     3.08        16      Quarto eIoni
+    5      611    -35.3     2.37    0.0107  0.00127    0.226      16.2      Quarto eIoni
+    6      611    -36.1     2.27   0.00666  0.00254     1.07      17.3      Quarto eIoni
+    7      611      -36     1.95   0.00319    0.002    0.681      17.9      Quarto eIoni
+    8      611    -36.1     2.03         0  0.00319     0.35      18.3      Quarto eIoni
+Track (trackID 19, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 26,   Parent ID = 19
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      611      -36     1.95   0.00147        0        0         0      Quarto initStep
+    1      611    -36.1     1.93         0  0.00147    0.101     0.101      Quarto eIoni
+Track (trackID 26, parentID 19) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 25,   Parent ID = 19
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      611    -36.1     2.27   0.00147        0        0         0      Quarto initStep
+    1      611    -36.1     2.24         0  0.00147    0.101     0.101      Quarto eIoni
+Track (trackID 25, parentID 19) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 24,   Parent ID = 19
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      611    -35.3     2.37   0.00121        0        0         0      Quarto initStep
+    1      611    -35.3     2.34         0  0.00121   0.0751    0.0751      Quarto eIoni
+Track (trackID 24, parentID 19) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 23,   Parent ID = 19
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      610    -37.9     4.13    0.0122        0        0         0      Quarto initStep
+    1      609    -37.8     4.25   0.00902  0.00321     2.16      2.16      Quarto eIoni
+    2      609    -37.8     5.16   0.00236  0.00666     1.68      3.85      Quarto eIoni
+    3      609    -37.9     5.24         0  0.00236    0.211      4.06      Quarto eIoni
+Track (trackID 23, parentID 19) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 18,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      533    -39.8     2.34   0.00103        0        0         0      Quarto initStep
+    1      533    -39.8     2.35         0  0.00103   0.0594    0.0594      Quarto eIoni
+Track (trackID 18, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 17,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      485    -36.3     1.28   0.00107        0        0         0      Quarto initStep
+    1      485    -36.3     1.26         0  0.00107    0.063     0.063      Quarto eIoni
+Track (trackID 17, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 16,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      439    -32.9    0.324   0.00145        0        0         0      Quarto initStep
+    1      439    -32.9     0.29         0  0.00145   0.0985    0.0985      Quarto eIoni
+Track (trackID 16, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 15,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      397      -30   -0.601    0.0058        0        0         0      Quarto initStep
+    1      397    -30.1    -1.01         0   0.0058    0.998     0.998      Quarto eIoni
+Track (trackID 15, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 14,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      355    -27.1    -1.55    0.0179        0        0         0      Quarto initStep
+    1      355    -28.9   -0.103     0.013  0.00486     3.05      3.05      Quarto eIoni
+    2      357    -29.3   -0.713   0.00739  0.00565     2.28      5.33      Quarto eIoni
+    3      357    -29.7   -0.692   0.00234  0.00404    0.949      6.28      Quarto eIoni
+    4      357    -29.7   -0.648         0  0.00234    0.208      6.49      Quarto eIoni
+Track (trackID 14, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 27,   Parent ID = 14
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      357    -29.7   -0.692   0.00102        0        0         0      Quarto initStep
+    1      357    -29.7   -0.708         0  0.00102   0.0588    0.0588      Quarto eIoni
+Track (trackID 27, parentID 14) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 13,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      337    -25.9    -1.96    0.0421        0        0         0      Quarto initStep
+    1      340    -18.9    -3.31    0.0372  0.00491     9.01      9.01      Quarto eIoni
+    2      344    -15.1    -5.52    0.0312  0.00605      7.5      16.5      Quarto eIoni
+    3      344    -13.3    -3.78    0.0285  0.00161     2.67      19.2      Quarto eIoni
+    4      343    -10.7   -0.736     0.025  0.00356      5.2      24.4      Quarto eIoni
+    5      343    -7.22   -0.166    0.0206  0.00439      4.4      28.8      Quarto eIoni
+    6      341    -6.06      1.2    0.0155  0.00507     3.52      32.3      Quarto eIoni
+    7      341     -5.4    0.894    0.0118  0.00125    0.836      33.1      Quarto eIoni
+    8      340     -4.7  -0.0976   0.00713  0.00465      2.1      35.2      Quarto eIoni
+    9      340     -5.2   -0.373         0  0.00713     1.33      36.6      Quarto eIoni
+Track (trackID 13, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 29,   Parent ID = 13
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      341     -5.4    0.894   0.00247        0        0         0      Quarto initStep
+    1      341    -5.33    0.903         0  0.00247    0.228     0.228      Quarto eIoni
+Track (trackID 29, parentID 13) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 28,   Parent ID = 13
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      344    -13.3    -3.78   0.00105        0        0         0      Quarto initStep
+    1      344    -13.3    -3.78         0  0.00105   0.0616    0.0616      Quarto eIoni
+Track (trackID 28, parentID 13) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 12,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      115    -11.7    -6.74     0.403        0        0         0 Aquario-Fisico-Etanol initStep
+    1      116    -12.1    -7.14    0.0687    0.335     1.17      1.17 Aquario-Fisico-Etanol eIoni
+    2      116    -12.1    -7.11         0   0.0687   0.0682      1.24 Aquario-Fisico-Etanol eIoni
+Track (trackID 12, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 11,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      114    -11.7    -6.75      1.96        0        0         0 Aquario-Fisico-Etanol initStep
+    1      117    -11.7     -7.4      1.31    0.655     3.35      3.35 Aquario-Fisico-Etanol eIoni
+    2      119    -10.6    -7.62     0.584    0.721     2.59      5.94 Aquario-Fisico-Etanol eIoni
+    3      120    -10.3    -7.65     0.256    0.328      1.6      7.54 Aquario-Fisico-Etanol eIoni
+    4      121    -10.5     -7.9         0    0.256    0.605      8.15 Aquario-Fisico-Etanol eIoni
+Track (trackID 11, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 10,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      109    -11.5    -6.82     0.415        0        0         0 Aquario-Fisico-Etanol initStep
+    1      110    -11.7    -6.32    0.0754     0.34      1.2       1.2 Aquario-Fisico-Etanol eIoni
+    2      110    -11.7    -6.34         0   0.0754   0.0802      1.28 Aquario-Fisico-Etanol eIoni
+Track (trackID 10, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 9,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     57.8    -8.88    -5.08     0.508        0        0         0 Aquario-Fisico-Etanol initStep
+    1     58.4    -9.62    -4.96     0.154    0.354     1.45      1.45 Aquario-Fisico-Etanol eIoni
+    2     58.3    -9.59    -5.09         0    0.154    0.269      1.72 Aquario-Fisico-Etanol eIoni
+Track (trackID 9, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 8,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     51.2    -8.59    -4.81     0.666        0        0         0 Aquario-Fisico-Etanol initStep
+    1     52.1    -8.49    -3.98     0.353    0.314     1.74      1.74 Aquario-Fisico-Etanol eIoni
+    2     52.4    -8.77    -3.57         0    0.353     0.98      2.72 Aquario-Fisico-Etanol eIoni
+Track (trackID 8, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 7,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     27.6    -7.32    -3.99     0.628        0        0         0 Aquario-Fisico-Etanol initStep
+    1     28.4    -8.04    -3.51     0.282    0.347     1.68      1.68 Aquario-Fisico-Etanol eIoni
+    2     28.7    -7.97     -3.2         0    0.282    0.699      2.38 Aquario-Fisico-Etanol eIoni
+Track (trackID 7, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 6,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      9.6    -6.31    -3.25     0.342        0        0         0 Aquario-Fisico-Etanol initStep
+    1     9.94    -6.01    -2.94         0    0.342    0.936     0.936 Aquario-Fisico-Etanol eIoni
+Track (trackID 6, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 5,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0   -0.629    -5.58    -2.81     0.432        0        0         0 Aquario-Fisico-Etanol initStep
+    1   -0.111    -5.01    -2.93         0    0.432     1.26      1.26 Aquario-Fisico-Etanol eIoni
+Track (trackID 5, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 4,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0    -20.1     -4.3    -1.91     0.332        0        0         0 Aquario-Fisico-Etanol initStep
+    1    -19.8    -4.28    -1.49         0    0.332    0.895     0.895 Aquario-Fisico-Etanol eIoni
+Track (trackID 4, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 3,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0    -49.1    -2.48    -0.55     0.588        0        0         0 Aquario-Fisico-Etanol initStep
+    1    -48.3    -1.87  -0.0767     0.167    0.421     1.61      1.61 Aquario-Fisico-Etanol eIoni
+    2    -48.4    -1.91   -0.234         0    0.167    0.307      1.92 Aquario-Fisico-Etanol eIoni
+Track (trackID 3, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 2,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0    -88.4   -0.545    0.848     0.306        0        0         0 Aquario-Fisico-Etanol initStep
+    1    -88.2   -0.672    0.465         0    0.306    0.792     0.792 Aquario-Fisico-Etanol eIoni
+Track (trackID 2, parentID 1) is processed with stopping code 2
+NULL returned from G4StackManager.
+Terminate current event processing.
+=====================================
+  G4EventManager::ProcessOneEvent()  
+=====================================
+G4PrimaryTransformer::PrimaryVertex (-175(mm),0(mm),0(mm),0(nsec))
+1 primary tracks are passed to the stack.
+!!!!!!! Now start processing an event !!!!!!!
+
+*********************************************************************************************************
+* G4Track Information:   Particle = mu+,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     -175        0        0       150        0        0         0      Quarto initStep
+    1     -150        0        0       150  0.00397       25        25 Aquario-Fisico Transportation
+    2     -145 -0.000479 -0.000468       148     1.74        5        30 Aquario-Fisico-Etanol Transportation
+    3    -96.9     1.07    -0.41       138     10.2     48.2      78.2 Aquario-Fisico-Etanol muIoni
+    4    -1.98     5.69     1.52       118     20.2     95.1       173 Aquario-Fisico-Etanol muIoni
+    5     36.2     8.45     1.61       108     8.57     38.2       211 Aquario-Fisico-Etanol muIoni
+    6     43.6        9     1.75       106     1.56      7.5       219 Aquario-Fisico-Etanol muIoni
+    7     96.5     12.8     2.14      93.4     12.4     53.1       272 Aquario-Fisico-Etanol muIoni
+    8      112     14.3      2.4      89.6      3.4     15.2       287 Aquario-Fisico-Etanol muIoni
+    9      131     16.7     2.69      83.9     4.82     19.7       307 Aquario-Fisico-Etanol muIoni
+   10      135     17.2     2.73      82.4    0.894     3.96       311 Aquario-Fisico-Etanol muIoni
+   11      145     18.7     2.85      79.5     2.93     9.99       321 Aquario-Fisico Transportation
+   12      146     18.8     2.85      77.9    0.921     1.16       322 Aquario-Fisico muIoni
+   13      150     19.4     2.77      75.9     2.02      3.9       326      Quarto Transportation
+   14      188     26.4     1.98      75.8   0.0049     38.8       365      Quarto muIoni
+   15      218     31.8     1.33      75.8   0.0029     30.2       395      Quarto muIoni
+   16      346     54.9    -1.29      75.8   0.0193      130       525      Quarto muIoni
+   17      388     62.3    -2.13      75.8  0.00572     42.2       567      Quarto muIoni
+   18      482     79.2    -4.14      75.8   0.0118     96.1       663      Quarto muIoni
+   19      538     89.2    -5.27      75.8  0.00734     56.7       720      Quarto muIoni
+   20      574     95.7    -6.02      75.8  0.00555     36.9       757      Quarto muIoni
+   21      757      128      -10      75.7   0.0305      185       942      Quarto muIoni
+   22      776      132    -10.4      75.7  0.00337     19.6       962      Quarto muIoni
+   23      937      160    -13.9      75.7   0.0263      164  1.13e+03      Quarto muIoni
+   24      966      165    -14.5      75.7  0.00637       29  1.15e+03      Quarto muIoni
+   25    1e+03      171    -15.2      75.7  0.00445     34.8  1.19e+03  OutOfWorld Transportation
+Track (trackID 1, parentID 0) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 20,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      966      165    -14.5   0.00163        0        0         0      Quarto initStep
+    1      966      165    -14.5         0  0.00163    0.118     0.118      Quarto eIoni
+Track (trackID 20, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 19,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      937      160    -13.9   0.00143        0        0         0      Quarto initStep
+    1      937      160    -13.8         0  0.00143   0.0963    0.0963      Quarto eIoni
+Track (trackID 19, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 18,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      776      132    -10.4    0.0088        0        0         0      Quarto initStep
+    1      776      132    -11.2   0.00371  0.00509     1.65      1.65      Quarto eIoni
+    2      776      132    -11.3         0  0.00371    0.454       2.1      Quarto eIoni
+Track (trackID 18, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 17,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      757      128      -10    0.0353        0        0         0      Quarto initStep
+    1      757      129    -10.8    0.0334 0.000802     1.26      1.26      Quarto eIoni
+    2      758      132    -12.7    0.0304  0.00204     4.27      5.52      Quarto eIoni
+    3      758      133    -13.1    0.0282 0.000228    0.632      6.16      Quarto eIoni
+    4      758      135    -16.5    0.0237  0.00452     5.14      11.3      Quarto eIoni
+    5      756      136    -18.4    0.0172  0.00656     4.14      15.4      Quarto eIoni
+    6      756      137    -18.7    0.0145 0.000875    0.933      16.4      Quarto eIoni
+    7      756      139    -19.1    0.0106  0.00396      2.5      18.9      Quarto eIoni
+    8      755      140    -18.6   0.00645   0.0041     1.92      20.8      Quarto eIoni
+    9      755      139    -18.5         0  0.00645     1.18        22      Quarto eIoni
+Track (trackID 17, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 24,   Parent ID = 17
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      756      137    -18.7   0.00178        0        0         0      Quarto initStep
+    1      756      137    -18.6         0  0.00178    0.135     0.135      Quarto eIoni
+Track (trackID 24, parentID 17) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 23,   Parent ID = 17
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      758      133    -13.1   0.00192        0        0         0      Quarto initStep
+    1      758      133    -13.1         0  0.00192    0.152     0.152      Quarto eIoni
+Track (trackID 23, parentID 17) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 22,   Parent ID = 17
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      758      132    -12.7     0.001        0        0         0      Quarto initStep
+    1      758      132    -12.7         0    0.001    0.057     0.057      Quarto eIoni
+Track (trackID 22, parentID 17) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 21,   Parent ID = 17
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      757      129    -10.8   0.00103        0        0         0      Quarto initStep
+    1      757      129    -10.8         0  0.00103   0.0599    0.0599      Quarto eIoni
+Track (trackID 21, parentID 17) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 16,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      574     95.7    -6.02   0.00129        0        0         0      Quarto initStep
+    1      574     95.7       -6         0  0.00129   0.0828    0.0828      Quarto eIoni
+Track (trackID 16, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 15,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      538     89.2    -5.27   0.00326        0        0         0      Quarto initStep
+    1      538     89.1     -5.4         0  0.00326    0.364     0.364      Quarto eIoni
+Track (trackID 15, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 14,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      482     79.2    -4.14   0.00157        0        0         0      Quarto initStep
+    1      482     79.2    -4.11         0  0.00157    0.111     0.111      Quarto eIoni
+Track (trackID 14, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 13,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      388     62.3    -2.13   0.00164        0        0         0      Quarto initStep
+    1      388     62.3    -2.11         0  0.00164    0.119     0.119      Quarto eIoni
+Track (trackID 13, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 12,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      346     54.9    -1.29    0.0016        0        0         0      Quarto initStep
+    1      346     54.9    -1.24         0   0.0016    0.115     0.115      Quarto eIoni
+Track (trackID 12, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 11,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      218     31.8     1.33   0.00119        0        0         0      Quarto initStep
+    1      218     31.8      1.3         0  0.00119   0.0736    0.0736      Quarto eIoni
+Track (trackID 11, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 10,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      188     26.4     1.98   0.00132        0        0         0      Quarto initStep
+    1      188     26.4     1.97         0  0.00132   0.0853    0.0853      Quarto eIoni
+Track (trackID 10, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 9,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      146     18.8     2.85     0.706        0        0         0 Aquario-Fisico initStep
+    1      147     18.8     3.21    0.0828    0.623     1.32      1.32 Aquario-Fisico eIoni
+    2      147     18.8     3.22         0   0.0828   0.0537      1.38 Aquario-Fisico eIoni
+Track (trackID 9, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 8,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      135     17.2     2.73     0.619        0        0         0 Aquario-Fisico-Etanol initStep
+    1      136     17.1        2     0.238    0.381     1.66      1.66 Aquario-Fisico-Etanol eIoni
+    2      136       17     2.22         0    0.238     0.54       2.2 Aquario-Fisico-Etanol eIoni
+Track (trackID 8, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 7,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      131     16.7     2.69     0.837        0        0         0 Aquario-Fisico-Etanol initStep
+    1      132     17.7     2.36     0.245    0.592        2         2 Aquario-Fisico-Etanol eIoni
+    2      133     17.9     2.24         0    0.245    0.563      2.56 Aquario-Fisico-Etanol eIoni
+Track (trackID 7, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 6,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      112     14.3      2.4     0.449        0        0         0 Aquario-Fisico-Etanol initStep
+    1      112       14     2.89     0.112    0.338      1.3       1.3 Aquario-Fisico-Etanol eIoni
+    2      112       14     2.96         0    0.112    0.158      1.46 Aquario-Fisico-Etanol eIoni
+Track (trackID 6, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 5,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     96.5     12.8     2.14      0.32        0        0         0 Aquario-Fisico-Etanol initStep
+    1     96.8     13.2     2.27         0     0.32    0.849     0.849 Aquario-Fisico-Etanol eIoni
+Track (trackID 5, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 4,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     43.6        9     1.75     0.647        0        0         0 Aquario-Fisico-Etanol initStep
+    1     44.5      9.9     1.99     0.275    0.372     1.71      1.71 Aquario-Fisico-Etanol eIoni
+    2     44.8       10     2.19         0    0.275    0.674      2.39 Aquario-Fisico-Etanol eIoni
+Track (trackID 4, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 3,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     36.2     8.45     1.61      0.64        0        0         0 Aquario-Fisico-Etanol initStep
+    1     36.2     8.42      1.6     0.626   0.0102   0.0461    0.0461 Aquario-Fisico-Etanol eBrem
+    2     37.2     7.73     1.37     0.234    0.393     1.68      1.72 Aquario-Fisico-Etanol eIoni
+    3     37.3     7.72     1.66         0    0.234    0.524      2.25 Aquario-Fisico-Etanol eIoni
+Track (trackID 3, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 25,   Parent ID = 3
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     36.2     8.42      1.6   0.00311        0        0         0 Aquario-Fisico-Etanol initStep
+    1     36.2     8.38     1.61         0  1.5e-05   0.0475    0.0475 Aquario-Fisico-Etanol phot
+Track (trackID 25, parentID 3) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 27,   Parent ID = 25
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     36.2     8.38     1.61  0.000273        0        0         0 Aquario-Fisico-Etanol initStep
+    1     36.2     8.38     1.61         0 0.000273 9.26e-06  9.26e-06 Aquario-Fisico-Etanol eIoni
+Track (trackID 27, parentID 25) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 26,   Parent ID = 25
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     36.2     8.38     1.61   0.00282        0        0         0 Aquario-Fisico-Etanol initStep
+    1     36.2     8.38     1.61         0  0.00282 0.000255  0.000255 Aquario-Fisico-Etanol eIoni
+Track (trackID 26, parentID 25) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 2,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0    -96.9     1.07    -0.41     0.318        0        0         0 Aquario-Fisico-Etanol initStep
+    1    -96.6    0.875   -0.763         0    0.318     0.84      0.84 Aquario-Fisico-Etanol eIoni
+Track (trackID 2, parentID 1) is processed with stopping code 2
+NULL returned from G4StackManager.
+Terminate current event processing.
+=====================================
+  G4EventManager::ProcessOneEvent()  
+=====================================
+G4PrimaryTransformer::PrimaryVertex (-175(mm),0(mm),0(mm),0(nsec))
+1 primary tracks are passed to the stack.
+!!!!!!! Now start processing an event !!!!!!!
+
+*********************************************************************************************************
+* G4Track Information:   Particle = mu+,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     -175        0        0       150        0        0         0      Quarto initStep
+    1     -150        0        0       150  0.00327       25        25 Aquario-Fisico Transportation
+    2     -145  0.00214 5.16e-06       148     1.67        5        30 Aquario-Fisico-Etanol Transportation
+    3      -62    0.125   0.0156       131     16.8       83       113 Aquario-Fisico-Etanol muIoni
+    4     1.33   -0.585    -2.02       116     14.2     63.4       176 Aquario-Fisico-Etanol muIoni
+    5     47.9    -1.28     -4.4       107     9.43     46.6       223 Aquario-Fisico-Etanol muIoni
+    6     61.5    -1.65     -4.9       103     3.17     13.7       237 Aquario-Fisico-Etanol muIoni
+    7     89.8     -2.4    -6.33      96.4     6.31     28.3       265 Aquario-Fisico-Etanol muIoni
+    8      120    -2.58    -7.78      88.8      7.2       30       295 Aquario-Fisico-Etanol muIoni
+    9      127    -2.56    -8.32      86.5     1.71     6.86       302 Aquario-Fisico-Etanol muIoni
+   10      140     -2.5    -9.31        83     3.08     13.6       315 Aquario-Fisico-Etanol muIoni
+   11      145    -2.42    -9.63        82    0.998     4.85       320 Aquario-Fisico Transportation
+   12      150     -2.4      -10        80        2     5.02       325      Quarto Transportation
+   13      436     3.82    -36.1        80   0.0464      288       613      Quarto muIoni
+   14      481     4.87    -40.2        80  0.00435     44.7       658      Quarto muIoni
+   15      509     5.55    -42.8        80  0.00357     28.8       686      Quarto muIoni
+   16      514     5.66    -43.2        80 0.000517     4.48       691      Quarto muIoni
+   17      537     6.22    -45.4      79.9  0.00381     23.3       714      Quarto muIoni
+   18      539     6.27    -45.6      79.9 0.000318     2.24       716      Quarto muIoni
+   19      690     10.1    -59.4      79.9   0.0275      151       868      Quarto muIoni
+   20      718     10.9      -62      79.9  0.00405     28.5       896      Quarto muIoni
+   21      863     14.7      -75      79.9   0.0265      145  1.04e+03      Quarto muIoni
+   22    1e+03     18.4    -87.3      79.8   0.0158      138  1.18e+03  OutOfWorld Transportation
+Track (trackID 1, parentID 0) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 18,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      863     14.7      -75   0.00158        0        0         0      Quarto initStep
+    1      863     14.7      -75         0  0.00158    0.112     0.112      Quarto eIoni
+Track (trackID 18, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 17,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      718     10.9      -62   0.00114        0        0         0      Quarto initStep
+    1      718     10.9      -62         0  0.00114   0.0693    0.0693      Quarto eIoni
+Track (trackID 17, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 16,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      690     10.1    -59.4   0.00417        0        0         0      Quarto initStep
+    1      690     10.3    -59.5    0.0013  0.00184    0.292     0.292      Quarto eIoni
+    2      690     10.3    -59.5         0   0.0013   0.0836     0.376      Quarto eIoni
+Track (trackID 16, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 19,   Parent ID = 16
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      690     10.3    -59.5   0.00103        0        0         0      Quarto initStep
+    1      690     10.3    -59.5         0  0.00103   0.0595    0.0595      Quarto eIoni
+Track (trackID 19, parentID 16) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 15,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      539     6.27    -45.6    0.0124        0        0         0      Quarto initStep
+    1      540     6.96    -44.7   0.00498  0.00374     1.55      1.55      Quarto eIoni
+    2      539      7.1    -44.5         0  0.00498    0.762      2.31      Quarto eIoni
+Track (trackID 15, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 20,   Parent ID = 15
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      540     6.96    -44.7   0.00372        0        0         0      Quarto initStep
+    1      540     6.93    -44.5         0  0.00372    0.457     0.457      Quarto eIoni
+Track (trackID 20, parentID 15) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 14,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      537     6.22    -45.4    0.0103        0        0         0      Quarto initStep
+    1      537     5.36    -46.1   0.00647  0.00386     1.88      1.88      Quarto eIoni
+    2      537     5.65    -46.4   0.00129  0.00518     1.18      3.07      Quarto eIoni
+    3      537     5.64    -46.4         0  0.00129    0.083      3.15      Quarto eIoni
+Track (trackID 14, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 13,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      514     5.66    -43.2    0.0017        0        0         0      Quarto initStep
+    1      514     5.68    -43.3         0   0.0017    0.126     0.126      Quarto eIoni
+Track (trackID 13, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 12,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      509     5.55    -42.8   0.00126        0        0         0      Quarto initStep
+    1      509     5.56    -42.9         0  0.00126   0.0798    0.0798      Quarto eIoni
+Track (trackID 12, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 11,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      481     4.87    -40.2    0.0022        0        0         0      Quarto initStep
+    1      481     4.94    -40.2         0   0.0022    0.188     0.188      Quarto eIoni
+Track (trackID 11, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 10,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      436     3.82    -36.1    0.0014        0        0         0      Quarto initStep
+    1      436     3.79    -36.1         0   0.0014   0.0931    0.0931      Quarto eIoni
+Track (trackID 10, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 9,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      140     -2.5    -9.31     0.421        0        0         0 Aquario-Fisico-Etanol initStep
+    1      141    -3.02    -9.14    0.0867    0.334     1.22      1.22 Aquario-Fisico-Etanol eIoni
+    2      141    -2.96    -9.14         0   0.0867    0.102      1.32 Aquario-Fisico-Etanol eIoni
+Track (trackID 9, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 8,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      127    -2.56    -8.32     0.528        0        0         0 Aquario-Fisico-Etanol initStep
+    1      127    -3.15    -7.97     0.172    0.356     1.49      1.49 Aquario-Fisico-Etanol eIoni
+    2      127    -3.01    -7.85         0    0.172     0.32      1.81 Aquario-Fisico-Etanol eIoni
+Track (trackID 8, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 7,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      120    -2.58    -7.78     0.419        0        0         0 Aquario-Fisico-Etanol initStep
+    1      120    -2.99    -8.21    0.0625    0.357     1.22      1.22 Aquario-Fisico-Etanol eIoni
+    2      120    -2.96    -8.23         0   0.0625   0.0579      1.28 Aquario-Fisico-Etanol eIoni
+Track (trackID 7, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 6,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     89.8     -2.4    -6.33     0.315        0        0         0 Aquario-Fisico-Etanol initStep
+    1       90     -2.3    -6.73         0    0.315    0.828     0.828 Aquario-Fisico-Etanol eIoni
+Track (trackID 6, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 5,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     61.5    -1.65     -4.9     0.439        0        0         0 Aquario-Fisico-Etanol initStep
+    1       62    -2.28    -4.89       0.1    0.339     1.28      1.28 Aquario-Fisico-Etanol eIoni
+    2     62.1     -2.3    -4.83         0      0.1    0.131      1.41 Aquario-Fisico-Etanol eIoni
+Track (trackID 5, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 4,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     47.9    -1.28     -4.4     0.427        0        0         0 Aquario-Fisico-Etanol initStep
+    1     48.3    -1.89    -4.43     0.157    0.271     1.24      1.24 Aquario-Fisico-Etanol eIoni
+    2     48.3    -1.93    -4.28         0    0.157    0.276      1.52 Aquario-Fisico-Etanol eIoni
+Track (trackID 4, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 3,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     1.33   -0.585    -2.02     0.365        0        0         0 Aquario-Fisico-Etanol initStep
+    1      1.7   -0.888    -1.65     0.044    0.321     1.03      1.03 Aquario-Fisico-Etanol eIoni
+    2      1.7   -0.905    -1.65         0    0.044   0.0313      1.06 Aquario-Fisico-Etanol eIoni
+Track (trackID 3, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 2,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      -62    0.125   0.0156      0.51        0        0         0 Aquario-Fisico-Etanol initStep
+    1    -61.3    0.803    0.275     0.217    0.294     1.45      1.45 Aquario-Fisico-Etanol eIoni
+    2    -61.5    0.589    0.179         0    0.217    0.465      1.92 Aquario-Fisico-Etanol eIoni
+Track (trackID 2, parentID 1) is processed with stopping code 2
+NULL returned from G4StackManager.
+Terminate current event processing.
+=====================================
+  G4EventManager::ProcessOneEvent()  
+=====================================
+G4PrimaryTransformer::PrimaryVertex (-175(mm),0(mm),0(mm),0(nsec))
+1 primary tracks are passed to the stack.
+!!!!!!! Now start processing an event !!!!!!!
+
+*********************************************************************************************************
+* G4Track Information:   Particle = mu+,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     -175        0        0       150        0        0         0      Quarto initStep
+    1     -150        0        0       150  0.00222     24.9      24.9      Quarto muIoni
+    2     -150 1.96e-05 -8.08e-06       150 3.86e-05   0.0768        25 Aquario-Fisico Transportation
+    3     -145   0.0013 -0.000534       148     1.92        5        30 Aquario-Fisico-Etanol Transportation
+    4     -120    -1.55     1.04       143     4.97     24.6      54.6 Aquario-Fisico-Etanol muIoni
+    5    -45.5    -7.99     4.38       126     15.9     75.3       130 Aquario-Fisico-Etanol muIoni
+    6    -42.8    -8.29     4.47       123     0.66      2.7       133 Aquario-Fisico-Etanol muIoni
+    7    -18.3      -11     5.37       117     5.15     24.7       157 Aquario-Fisico-Etanol muIoni
+    8     1.28    -13.2     5.92       112     4.02     19.7       177 Aquario-Fisico-Etanol muIoni
+    9       72    -22.3     7.08      96.9     15.4     71.3       248 Aquario-Fisico-Etanol muIoni
+   10      129    -29.8     6.92      83.7     13.3     57.6       306 Aquario-Fisico-Etanol muIoni
+   11      145    -31.9     6.69      79.9     3.75       16       322 Aquario-Fisico Transportation
+   12      150    -32.5     6.64      77.4     2.53     5.04       327      Quarto Transportation
+   13      226    -41.8     5.54      77.4   0.0153     76.7       404      Quarto muIoni
+   14      353    -57.3     3.68      77.3   0.0213      128       531      Quarto muIoni
+   15      487    -73.5     1.59      77.3   0.0198      135       666      Quarto muIoni
+   16      594    -86.7   -0.252      77.3   0.0148      108       775      Quarto muIoni
+   17      637      -92   -0.903      77.3  0.00619       43       818      Quarto muIoni
+   18      691    -98.7    -1.56      77.3  0.00949     54.7       872      Quarto muIoni
+   19      936     -129    -4.21      77.2     0.04      247  1.12e+03      Quarto muIoni
+   20      970     -133    -4.49      77.2  0.00663     33.4  1.15e+03      Quarto muIoni
+   21      974     -134    -4.53      77.2 0.000622     4.38  1.16e+03      Quarto muIoni
+   22      997     -137    -4.73      77.2  0.00388     23.7  1.18e+03      Quarto muIoni
+   23    1e+03     -137    -4.75      77.2  0.00068     2.53  1.18e+03  OutOfWorld Transportation
+Track (trackID 1, parentID 0) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 13,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      691    -98.7    -1.56   0.00185        0        0         0      Quarto initStep
+    1      691    -98.8    -1.55         0  0.00185    0.143     0.143      Quarto eIoni
+Track (trackID 13, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 12,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      637      -92   -0.903   0.00206        0        0         0      Quarto initStep
+    1      637      -92   -0.839         0  0.00206     0.17      0.17      Quarto eIoni
+Track (trackID 12, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 11,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      594    -86.7   -0.252   0.00121        0        0         0      Quarto initStep
+    1      594    -86.7   -0.267         0  0.00121   0.0751    0.0751      Quarto eIoni
+Track (trackID 11, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 10,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      487    -73.5     1.59   0.00102        0        0         0      Quarto initStep
+    1      487    -73.5     1.61         0  0.00102   0.0589    0.0589      Quarto eIoni
+Track (trackID 10, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 9,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      353    -57.3     3.68    0.0013        0        0         0      Quarto initStep
+    1      353    -57.2     3.69         0   0.0013   0.0839    0.0839      Quarto eIoni
+Track (trackID 9, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 8,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      226    -41.8     5.54   0.00163        0        0         0      Quarto initStep
+    1      226    -41.8      5.5         0  0.00163    0.118     0.118      Quarto eIoni
+Track (trackID 8, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 7,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     1.28    -13.2     5.92     0.687        0        0         0 Aquario-Fisico-Etanol initStep
+    1     2.34    -12.5     5.53     0.337     0.35     1.78      1.78 Aquario-Fisico-Etanol eIoni
+    2     2.72    -12.6     5.16         0    0.337    0.917       2.7 Aquario-Fisico-Etanol eIoni
+Track (trackID 7, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 6,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0    -18.3      -11     5.37      1.17        0        0         0 Aquario-Fisico-Etanol initStep
+    1    -16.5    -10.3     6.23     0.763    0.403     2.42      2.42 Aquario-Fisico-Etanol eIoni
+    2    -17.9    -10.5     5.91     0.091    0.672     1.89      4.32 Aquario-Fisico-Etanol eIoni
+    3      -18    -10.5     5.88         0    0.091    0.111      4.43 Aquario-Fisico-Etanol eIoni
+Track (trackID 6, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 5,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0    -42.8    -8.29     4.47      2.05        0        0         0 Aquario-Fisico-Etanol initStep
+    1    -39.9    -8.44     3.35      1.42    0.632     3.46      3.46 Aquario-Fisico-Etanol eIoni
+    2    -37.7    -9.37     3.12      0.95    0.473     2.73      6.19 Aquario-Fisico-Etanol eIoni
+    3    -36.3    -10.3     3.09     0.533    0.417     2.15      8.34 Aquario-Fisico-Etanol eIoni
+    4    -35.2    -10.3     3.11       0.2    0.334      1.5      9.84 Aquario-Fisico-Etanol eIoni
+    5    -35.1    -10.4     3.24         0      0.2    0.408      10.2 Aquario-Fisico-Etanol eIoni
+Track (trackID 5, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 4,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0    -45.5    -7.99     4.38     0.611        0        0         0 Aquario-Fisico-Etanol initStep
+    1    -44.6    -7.29     4.08     0.214    0.397     1.65      1.65 Aquario-Fisico-Etanol eIoni
+    2    -44.6    -7.47     3.89         0    0.214    0.456      2.11 Aquario-Fisico-Etanol eIoni
+Track (trackID 4, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 3,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     -120    -1.55     1.04     0.577        0        0         0 Aquario-Fisico-Etanol initStep
+    1     -120    -1.94     1.84     0.216    0.361     1.59      1.59 Aquario-Fisico-Etanol eIoni
+    2     -120    -2.06     1.72         0    0.216    0.461      2.05 Aquario-Fisico-Etanol eIoni
+Track (trackID 3, parentID 1) is processed with stopping code 2
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 2,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     -150        0        0   0.00214        0        0         0      Quarto initStep
+    1     -150 -0.00594   -0.041   0.00204 9.46e-05   0.0461    0.0461      Quarto msc
+    2     -150  -0.0116  -0.0803   0.00181 0.000235   0.0567     0.103      Quarto msc
+    3     -150  0.00398  -0.0922   0.00165 0.000155   0.0312     0.134      Quarto msc
+    4     -150 -7.42e-05  -0.0975   0.00136  0.00029    0.021     0.155      Quarto msc
+    5     -150 -0.00281  -0.0968   0.00119 0.000175   0.0111     0.166      Quarto msc
+    6     -150 -0.00368  -0.0962   0.00117 1.56e-05  0.00439     0.171 Aquario-Fisico Transportation
+    7     -150 -0.00368  -0.0962   0.00112 5.54e-05  3.9e-06     0.171 Aquario-Fisico msc
+    8     -150 -0.00368  -0.0962    0.0011 1.56e-05  3.9e-06     0.171 Aquario-Fisico msc
+    9     -150 -0.00368  -0.0962         0   0.0011 4.15e-06     0.171 Aquario-Fisico msc
+Track (trackID 2, parentID 1) is processed with stopping code 2
+NULL returned from G4StackManager.
+Terminate current event processing.
+ Run terminated.
+Run Summary
+  Number of events processed : 4
+  User=0.100000s Real=0.107373s Sys=0.010000s [Cpu=102.4%]
+1 event has been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review one by one.
+  To see accumulated, "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild".
+ Changing export format to "jpg"
