@@ -3,9 +3,6 @@
 Este projeto visa a criação de uma simulação de um detector de partículas utilizando o framework Geant4, com foco em uma câmara de nuvens. O cenário simulado envolve um aquário preenchido com etanol, cuja densidade é maior para simular o estado supersaturado do etanol, como ocorre quando ele passa de um estado gasoso para o líquido. Esse ambiente é cercado por paredes de vidro e está localizado dentro de um quarto controlado. A câmara de nuvens simula a trajetória de partículas carregadas, sendo visualizada por meio da condensação de vapor de etanol, similar ao que ocorre em detectores reais. A simulação abrange a geração de partículas fictícias chamadas "Geantinos" e a visualização das interações dessas partículas com o ambiente, permitindo o estudo das suas trajetórias e as reações no interior da câmara.
 
 Para uma melhor compreensão sobre o Geant4 e o problema específico abordado neste projeto, acesse o arquivo [relatorio.pdf](relatorio.pdf).
-# Simulação de Detector de Partículas com Geant4
-
-Este projeto tem como objetivo a criação de uma simulação de um detector de partículas utilizando o framework Geant4, com foco em uma câmara de nuvens. O cenário simulado envolve um aquário preenchido com etanol, cuja densidade é ajustada para simular o estado supersaturado do etanol, como ocorre quando ele transita do estado gasoso para o líquido. Esse ambiente é cercado por paredes de vidro e está localizado dentro de um quarto controlado. A câmara de nuvens simula a trajetória de partículas carregadas, sendo visualizada por meio da condensação de vapor de etanol, similar ao que ocorre em detectores reais. A simulação envolve a geração de partículas fictícias chamadas "Geantinos" e a visualização das interações dessas partículas com o ambiente, permitindo o estudo das suas trajetórias e as reações dentro da câmara.
 
 ## Estrutura do Projeto
 
