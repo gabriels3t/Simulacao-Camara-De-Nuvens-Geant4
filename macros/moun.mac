@@ -31,7 +31,7 @@
 /tracking/verbose 1
 
 
-/gun/particle mu+
+/gun/particle mu-
 /gun/energy 150 MeV
 /gun/position -17.5 0 0 cm
 /run/beamOn 4
